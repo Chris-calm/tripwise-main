@@ -34,6 +34,18 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+// Passenger Booking App Simulator (Team 10)
+Route::get('/passenger-booking-app', function () {
+    return view('passenger-app');
+})->name('passenger.booking-app');
+
+// Team 8 Facilities & Admin Sub-Modules and Integration Matrix Overview
+Route::get('/facilities-admin', function () {
+    return view('facilities.dashboard');
+})->name('facilities.dashboard');
+
+
+
 // Logout Route — implement when auth is set up
 Route::post('/logout', function () {
     // TODO: Auth::logout(); session()->invalidate(); session()->regenerateToken();

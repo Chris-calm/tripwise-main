@@ -32,6 +32,8 @@
             <span class="sidebar-text truncate">Dashboard</span>
         </a>
 
+
+
         <!-- Divider Label -->
         <div class="px-3 pt-4 pb-1">
             <span class="sidebar-text text-[10px] font-bold uppercase tracking-widest text-white/30">TNVS Systems</span>
@@ -130,6 +132,7 @@
                 </svg>
             </button>
             <div id="facilities-group" class="hidden ml-4 mt-1 space-y-0.5 border-l border-white/10 pl-3">
+                <a href="{{ url('/facilities-admin') }}" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors {{ (isset($currentPage) && $currentPage === 'facilities-dashboard') ? 'text-white font-bold' : '' }}">System Overview</a>
                 <a href="#" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors">Facilities Reservation</a>
                 <a href="#" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors">Visitor Management</a>
                 <a href="#" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors">Document Archiving</a>
@@ -170,7 +173,7 @@
                 </svg>
             </button>
             <div id="booking-group" class="hidden ml-4 mt-1 space-y-0.5 border-l border-white/10 pl-3">
-                <a href="#" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors">Booking System</a>
+                <a href="{{ url('/passenger-booking-app') }}" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors {{ (isset($currentPage) && $currentPage === 'passenger-app') ? 'text-white font-bold' : '' }}">Booking System (App)</a>
                 <a href="#" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors">Payment & Fare Collection</a>
                 <a href="#" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors">CRM</a>
                 <a href="#" class="block text-xs text-white/60 hover:text-white py-1.5 transition-colors">GPS Tracking</a>
